@@ -1,0 +1,329 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'SEO related things'
+        instructions: 'لطفا در این قسمت تمامی اطلاعات مربوط به سئو صفحه را پر کنید'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: pageAuthor
+            field:
+              input_type: text
+              placeholder: 'محمد رضا محمدی'
+              character_limit: 30
+              prepend: نویسنده
+              antlers: false
+              type: text
+              display: نویسنده
+              icon: text
+              instructions: 'نویسنده این صفحه'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: keyword
+            field:
+              input_type: text
+              placeholder: 'محیط زیست کمپوست'
+              default: 'چرخه حیات'
+              antlers: false
+              type: text
+              display: 'کلمات کلیدی'
+              icon: text
+              instructions: 'در این قسمت کلمات کلیدی مناسب برای این صفحه را قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: desription
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'توضیحات صفحه'
+              icon: text
+              instructions: 'در این قسمت مقداری درباره این صفحه توضیح دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: tabTitle
+            field:
+              input_type: text
+              placeholder: 'چرخه حیات | ....'
+              antlers: false
+              type: text
+              display: 'نوار مرورگر'
+              icon: text
+              instructions: 'در این قسمت یک نام برای تب مرورگر خود قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'اطلاعات کلی کتابچه'
+        instructions: 'در این قسمت اطلاعات کلی کتابچه قرار میگیرد'
+        fields:
+          -
+            handle: bookletAuthor
+            field:
+              input_type: text
+              placeholder: 'علی صفایی حایری'
+              antlers: false
+              type: text
+              display: 'نویسنده کتاب'
+              icon: text
+              instructions: 'در این قسمت نام نویسنده کتابچه را قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              character_limit: 25
+          -
+            handle: bookletName
+            field:
+              input_type: text
+              placeholder: 'جمع ها و حاصل جمع ها'
+              antlers: false
+              type: text
+              display: 'نام کتابچه'
+              icon: text
+              instructions: 'در این قسمت نام کتابچه مورد نظر خود را قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              character_limit: 20
+          -
+            handle: yearPublish
+            field:
+              input_type: text
+              placeholder: ۱۳۹۶
+              antlers: false
+              type: text
+              display: 'سال انتشار کتابچه'
+              icon: text
+              instructions: 'در این قسمت سال انتشار کتابچه را قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              character_limit: 4
+          -
+            handle: summaryPart3
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'قسمت سوم بریده برگزیده کتاب'
+              icon: text
+              instructions: 'در این قسمت سومین بریده ای از کتاب را که می خواهید قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: bookletLink
+            field:
+              input_type: text
+              placeholder: 'https://example.com/example.pdf'
+              antlers: false
+              type: text
+              display: 'لینک دانلود کتابچه'
+              icon: text
+              instructions: 'در این قسمت لینک دانلود کتابچه را قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: summaryPart1
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'قسمت اول بریده برگزیده'
+              icon: text
+              instructions: 'در این قسمت اولین بریده ای از کتاب را که می خواهید قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: summaryPart2
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'قسمت دوم بریده برگزیده کتاب'
+              icon: text
+              instructions: 'در این قسمت دومین بریده ای از کتاب را که می خواهید قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: pageNumber
+            field:
+              input_type: text
+              placeholder: ۳۴۳
+              antlers: false
+              type: text
+              display: 'تعداد صفحات کتابچه'
+              icon: text
+              instructions: 'در این قسمت تعداد صفحات کتابچه خود را قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              character_limit: 3
+      -
+        display: 'قسمت معرفی و تحلیل کتاب'
+        instructions: 'در این قسمت محتوای معرفی و تحلیل کتاب را قرار دهید'
+        fields:
+          -
+            handle: bookletIntro
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h1
+                - h4
+                - h5
+                - h6
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              smart_typography: false
+              save_html: true
+              inline: false
+              toolbar_mode: fixed
+              reading_time: true
+              word_count: true
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: false
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              placeholder: 'معرفی کتابجه'
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'معرفی کتاب'
+              icon: bard
+              instructions: 'در این قسمت کتابچه خود را معرفی کنید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: bookletAnalize
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h1
+                - h4
+                - h5
+                - h6
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+                - horizontalrule
+              smart_typography: false
+              save_html: true
+              inline: false
+              toolbar_mode: fixed
+              reading_time: true
+              word_count: true
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: false
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              placeholder: 'تحلیل کتابچه'
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'تحلیل کتاب'
+              icon: bard
+              instructions: 'در این قسمت تحلیل کتابچه خود را قرار دهید'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+title: 'کتابچه ها'

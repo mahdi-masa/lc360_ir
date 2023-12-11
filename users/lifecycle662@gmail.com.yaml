@@ -1,4 +1,11 @@
 name: lifecycle
 super: true
-id: acd1458c-43c8-426e-b80a-2555f150b05f
-password_hash: $2y$12$Gmfgp13MsZMv/vQ8LjKqIOEY4Erz7rJIy1yzKZKVNTpRsA72Q7./2
+id: c1ede7bd-11c2-4af0-9224-2178b8f71939
+password_hash: $2y$12$RKZ.kFrbJQFImdiDBTK2ROhWOFaH5PTiPn9NVVP2kN7HpO8ZKBgVe
+preferences:
+  collections:
+    booklets:
+      after_save: continue_editing
+  assets:
+    lifecycle:
+      mode: grid

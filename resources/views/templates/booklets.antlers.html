@@ -1,38 +1,69 @@
 
 <!-- booklet info section -->
 <div class="flex flex-col justify-center items-center tablet:flex-row max-w-[1100px] pc:mx-auto">
-    <div class="flex flex-col justify-center items-center w-full tablet:flex-row tablet:w-3/4">
-        <div class="w-full text-center tablet:w-fit tablet:mt-5">
-            <img class="w-[80%] mx-auto rounded-[8px] mt-4 tablet:w-[50%] tablet:mt-0 tablet:m-0 tablet:w-56" src="/result of gangs.jpeg" alt="">
-        </div>
-        <div class="mt-5 tablet:w-[40%] tablet:mx-5">
-            <h2 class="iransans-bold text-center text-2xl tablet:text-right">{{bookletName}}</h2>
-            <p class="iransans-bold text-center before:content-['نویسنده:'] mt-5 tablet:text-right">
-                {{bookletAuthor}}
-            </p>
-            <p class="iransans-bold text-center before:content-['سال انتشار'] tablet:text-right">
-                {{yearPublish}}
-            </p>
-            <p class="iransans-bold text-center before:content-['تعداد صفحات:'] tablet:text-right">
-                {{pageNumber}}
-            </p>
-        </div>
+    <div class="w-full text-center tablet:basis-1/4 tablet:mt-5 tablet:ms-14">
+        <img class="rounded-[8px] mobile:mx-auto" src="{{bookletPicture}}" alt="{{bookletPicture:alt}}">
     </div>
-    <div class="mt-5 text-center w-1/4">
-        <p class="text-center iransans-bold mb-5">مشاهده نمونه از کتابچه</p>
-        <button>
-            <a class="iransans-bold bg-green-200 p-3 rounded" href="{{bookletLink}}">دانلود کتابچه</a>
-        </button>
+    <div class="w-[90%] mt-5 flex flex-col justify-center items-center tablet:mx-5 tablet:flex-row tablet:basis-3/4">
+        <div class="w-full flex flex-col justify-center items-center tablet:justify-start">
+            <div class="w-full">
+                <h2 class="iransans-bold text-center text-2xl tablet:text-right text-[#7a7a7a]">{{bookletName}}</h2>
+            </div>
+
+            <div class="flex flex-row justify-start items-center space-x-reverse my-3 w-full">
+                <div>
+                    <i class="bi bi-file-earmark-person text-2xl"></i>
+                </div>
+                <div class="tablet:grow ms-3 text-right">
+                    <p class="iransans-bold text-center before:content-['نویسنده:_'] text-right">
+                        {{bookletAuthor}}
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="flex flex-row justify-start items-center space-x-reverse my-3 w-full">
+                <div>
+                    <i class="bi bi-calendar-date-fill text-2xl"></i>
+                </div>
+                <div class="tablet:grow ms-3 text-right">
+                    <p class="iransans-bold text-center before:content-['سال_انتشار:_'] text-right">
+                        {{yearPublish}}
+                    </p>
+                </div>
+
+            </div>
+            <div class="flex flex-row justify-start items-center space-x-reverse my-3 w-full">
+                <div>
+                    <i class="bi bi-book-half text-2xl"></i>
+                </div>
+                <div class="tablet:grow ms-3 text-right">
+                    <p class="iransans-bold text-center before:content-['تعداد_صفحات:_'] text-right">
+                        {{pageNumber}}
+                    </p> 
+                </div>
+
+            </div>
+            
+               
+        </div>
+        <div class="w-full mt-5 text-center w-1/4">
+            <p class="text-center iransans-bold mb-5">جهت دریافت کتابچه کلیک کنید</p>
+            <button>
+                <a class="iransans-bold bg-[#61ce70] p-3 rounded" href="{{bookletLink}}">دریافت کتابچه</a>
+            </button>
+        </div>    
     </div>
+    
 </div>
 <!-- end booklet info -->
 
 
 <!-- section of summary of the page -->
 <div class="mt-2 max-w-[1100px] pc:mx-auto">
-    <h2 class="text-right p-2 iransans-bold text-2xl mt-8">بریده ای از مقاله ها</h2>
+    <h2 class="text-right p-2 iransans-bold text-2xl mt-8 text-[#7a7a7a]">بریده ای از مقاله ها</h2>
     <div class="tablet:flex tablet:flex-row tablet:justify-center tablet:items-center">
-        <div class="my-5 w-[80%] mx-auto shadow-xl tablet:mx-2 rounded-[8px] border-black border-2">
+        <div class="my-5 w-[80%] mx-auto shadow-xl tablet:mx-2 rounded-[8px]">
             <div class="text-right">
                 <i class="bi bi-arrow-down-left-square-fill text-2xl ps-5"></i>
             </div>
@@ -41,7 +72,7 @@
             </div>
         </div>
     
-        <div class="my-5 w-[80%] mx-auto shadow-xl tablet:mx-2 rounded-[8px] border-black border-2">
+        <div class="my-5 w-[80%] mx-auto shadow-xl tablet:mx-2 rounded-[8px]">
             <div class="text-right">
                 <i class="bi bi-arrow-down-left-square-fill text-2xl ps-5"></i>
             </div>
@@ -50,7 +81,7 @@
             </div>
         </div>
     
-        <div class="my-5 w-[80%] mx-auto shadow-xl tablet:mx-2 rounded-[8px] border-black border-2">
+        <div class="my-5 w-[80%] mx-auto shadow-xl tablet:mx-2 rounded-[8px]">
             <div class="text-right">
                 <i class="bi bi-arrow-down-left-square-fill text-2xl ps-5"></i>
             </div>
@@ -70,13 +101,13 @@
 <!-- introduction of the booklets -->
 <div class="max-w-[1100px] mx-auto">
     <div>
-        <h2 class="my-7 iransans-bold px-3 text-2xl">معرفی کتاب</h2>
+        <h2 class="my-7 iransans-bold px-3 text-2xl text-[#7a7a7a]">معرفی کتاب</h2>
         <div class="iransans-300 p-3 text-[16px] text-justify">
             {{bookletIntro}}
         </div>
     </div>
     <div>
-        <h2 class="my-5 iransans-bold px-3 text-2xl">تحلیل کتاب</h2>
+        <h2 class="my-5 iransans-bold px-3 text-2xl text-[#7a7a7a]">تحلیل کتاب</h2>
         <div class="iransans-300 p-3 text-[16px] text-justify">
             {{bookletAnalize}}
         </div>

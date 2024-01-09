@@ -11,9 +11,12 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "league/flysystem-aws-s3-v3": "^3.0",
-        "statamic/cms": "*"
+        "statamic/cms": "*",
+        "statamic/seo-pro": "^5.3",
+        "stillat/meerkat": "^3.1"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.9",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",

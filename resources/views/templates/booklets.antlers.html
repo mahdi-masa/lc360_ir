@@ -1,3 +1,34 @@
+{{ push:styles }}
+<style>
+
+    #bookletIntro img {
+        margin: 15px auto;
+        width: 80%;
+        border-radius: 8px;
+    }
+    #bookletAnalize img {
+        margin: 15px auto;
+        width: 80%;
+        border-radius: 8px;
+    }
+    
+
+    @media screen and (max-width: 767px) {
+        #bookletIntro img {
+            width: 95%;
+        }
+        video{
+            width: 95%!important;
+        }
+        #bookletAnalize img {
+            width: 95%;
+        }
+
+    }
+
+</style>
+    
+{{ /push:styles }}
 
 <!-- booklet info section -->
 <div class="flex flex-col justify-center items-center tablet:flex-row max-w-[1100px] pc:mx-auto">
@@ -15,7 +46,7 @@
                     <i class="bi bi-file-earmark-person text-2xl"></i>
                 </div>
                 <div class="tablet:grow ms-3 text-right">
-                    <p class="iransans-bold text-center before:content-['نویسنده:_'] text-right">
+                    <p class="iransans-bold before:content-['نویسنده:_'] text-right">
                         {{bookletAuthor}}
                     </p>
                 </div>
@@ -27,7 +58,7 @@
                     <i class="bi bi-calendar-date-fill text-2xl"></i>
                 </div>
                 <div class="tablet:grow ms-3 text-right">
-                    <p class="iransans-bold text-center before:content-['سال_انتشار:_'] text-right">
+                    <p class="iransans-bold before:content-['سال_انتشار:_'] text-right">
                         {{yearPublish}}
                     </p>
                 </div>
@@ -38,7 +69,7 @@
                     <i class="bi bi-book-half text-2xl"></i>
                 </div>
                 <div class="tablet:grow ms-3 text-right">
-                    <p class="iransans-bold text-center before:content-['تعداد_صفحات:_'] text-right">
+                    <p class="iransans-bold before:content-['تعداد_صفحات:_'] text-right">
                         {{pageNumber}}
                     </p> 
                 </div>
@@ -64,8 +95,8 @@
     <h2 class="text-right p-2 iransans-bold text-2xl mt-8 text-[#7a7a7a]">بریده ای از مقاله ها</h2>
     <div class="tablet:flex tablet:flex-row tablet:justify-center tablet:items-center">
         <div class="my-5 w-[80%] mx-auto shadow-xl tablet:mx-2 rounded-[8px]">
-            <div class="text-right">
-                <i class="bi bi-arrow-down-left-square-fill text-2xl ps-5"></i>
+            <div class="text-right mb-3">
+                <i class="bi bi-chat-left-text-fill text-2xl p-[10px] border-black border-2 rounded-[50%]"></i>
             </div>
             <div class="p-2 iransans-500 text-justify h-52 overflow-y-scroll">
                 {{summaryPart1}}
@@ -73,8 +104,8 @@
         </div>
     
         <div class="my-5 w-[80%] mx-auto shadow-xl tablet:mx-2 rounded-[8px]">
-            <div class="text-right">
-                <i class="bi bi-arrow-down-left-square-fill text-2xl ps-5"></i>
+            <div class="text-right mb-3">
+                <i class="bi bi-chat-left-text-fill text-2xl p-[10px] border-black border-2 rounded-[50%]"></i>
             </div>
             <div class="p-2 iransans-500 text-justify h-52 overflow-y-scroll">
                 {{summaryPart1}}
@@ -82,8 +113,8 @@
         </div>
     
         <div class="my-5 w-[80%] mx-auto shadow-xl tablet:mx-2 rounded-[8px]">
-            <div class="text-right">
-                <i class="bi bi-arrow-down-left-square-fill text-2xl ps-5"></i>
+            <div class="text-right mb-3">
+                <i class="bi bi-chat-left-text-fill text-2xl p-[10px] border-black border-2 rounded-[50%]"></i>
             </div>
             <div class="p-2 iransans-500 text-justify h-52 overflow-y-scroll">
                 {{summaryPart1}}
@@ -102,13 +133,13 @@
 <div class="max-w-[1100px] mx-auto">
     <div>
         <h2 class="my-7 iransans-bold px-3 text-2xl text-[#7a7a7a]">معرفی کتاب</h2>
-        <div class="iransans-300 p-3 text-[16px] text-justify">
+        <div class="iransans-300 p-3 text-[16px] text-justify" id="bookletIntro">
             {{bookletIntro}}
         </div>
     </div>
     <div>
         <h2 class="my-5 iransans-bold px-3 text-2xl text-[#7a7a7a]">تحلیل کتاب</h2>
-        <div class="iransans-300 p-3 text-[16px] text-justify">
+        <div class="iransans-300 p-3 text-[16px] text-justify" id="bookletAnalize">
             {{bookletAnalize}}
         </div>
     </div>

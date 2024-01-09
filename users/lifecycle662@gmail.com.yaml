@@ -6,6 +6,10 @@ preferences:
   collections:
     booklets:
       after_save: continue_editing
+    documentry:
+      after_save: continue_editing
+    news:
+      after_save: continue_editing
   assets:
     lifecycle:
       mode: grid

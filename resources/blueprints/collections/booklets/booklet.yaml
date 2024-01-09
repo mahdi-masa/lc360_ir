@@ -14,67 +14,7 @@ tabs:
               validate:
                 - required
           -
-            handle: pageAuthor
-            field:
-              input_type: text
-              placeholder: 'محمد رضا محمدی'
-              character_limit: 30
-              prepend: نویسنده
-              antlers: false
-              type: text
-              display: نویسنده
-              icon: text
-              instructions: 'نویسنده این صفحه'
-              listable: hidden
-              instructions_position: below
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: keyword
-            field:
-              input_type: text
-              placeholder: 'محیط زیست کمپوست'
-              default: 'چرخه حیات'
-              antlers: false
-              type: text
-              display: 'کلمات کلیدی'
-              icon: text
-              instructions: 'در این قسمت کلمات کلیدی مناسب برای این صفحه را قرار دهید'
-              listable: hidden
-              instructions_position: below
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: desription
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'توضیحات صفحه'
-              icon: text
-              instructions: 'در این قسمت مقداری درباره این صفحه توضیح دهید'
-              listable: hidden
-              instructions_position: below
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: tabTitle
-            field:
-              input_type: text
-              placeholder: 'چرخه حیات | ....'
-              antlers: false
-              type: text
-              display: 'نوار مرورگر'
-              icon: text
-              instructions: 'در این قسمت یک نام برای تب مرورگر خود قرار دهید'
-              listable: hidden
-              instructions_position: below
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
+            import: seofields
       -
         display: 'اطلاعات کلی کتابچه'
         instructions: 'در این قسمت اطلاعات کلی کتابچه قرار میگیرد'
@@ -144,25 +84,9 @@ tabs:
               hide_display: false
               character_limit: 4
           -
-            handle: bookletLink
-            field:
-              input_type: text
-              placeholder: 'https://example.com/example.pdf'
-              antlers: false
-              type: text
-              display: 'لینک دانلود کتابچه'
-              icon: text
-              instructions: 'در این قسمت لینک دانلود کتابچه را قرار دهید'
-              listable: hidden
-              instructions_position: below
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
             handle: bookletPicture
             field:
               max_files: 1
-              min_files: 1
               mode: grid
               container: lifecycle
               restrict: true
@@ -179,11 +103,33 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
+            handle: bookletLink
+            field:
+              max_files: 1
+              mode: grid
+              container: lifecycle
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'لینک دانلود کتابچه'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: summaryPart1
             field:
               buttons:
+                - h1
                 - h2
                 - h3
+                - h4
+                - h5
+                - h6
                 - bold
                 - italic
                 - unorderedlist
@@ -193,10 +139,6 @@ tabs:
                 - anchor
                 - image
                 - table
-                - h1
-                - h4
-                - h5
-                - h6
                 - underline
                 - strikethrough
                 - small
@@ -233,6 +175,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              container: lifecycle
           -
             handle: summaryPart2
             field:
@@ -403,8 +346,12 @@ tabs:
             handle: bookletAnalize
             field:
               buttons:
+                - h1
                 - h2
                 - h3
+                - h4
+                - h5
+                - h6
                 - bold
                 - italic
                 - unorderedlist
@@ -414,10 +361,6 @@ tabs:
                 - anchor
                 - image
                 - table
-                - h1
-                - h4
-                - h5
-                - h6
                 - alignleft
                 - aligncenter
                 - alignright
@@ -438,7 +381,7 @@ tabs:
               antlers: false
               link_noopener: false
               link_noreferrer: false
-              target_blank: false
+              target_blank: true
               always_show_set_button: false
               collapse: false
               previews: true
@@ -471,4 +414,23 @@ tabs:
               default: now
               validate:
                 - required
+          -
+            handle: category
+            field:
+              type: terms
+              taxonomies:
+                - category
+              display: 'طبقه بندی'
+              mode: select
+  SEO:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO
 title: 'کتابچه ها'
